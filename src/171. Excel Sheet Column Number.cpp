@@ -11,8 +11,7 @@ public:
 
 		int res = 0;
 		for (int i = 0; i < s.size(); i++) {
-			res += pow(s[i] - 64, s.size() - i);
-			/*res += (s[i] - 64) * (26 * ())*/
+			res += (s[i] - 64) * pow(24, s.size() - i - 1);
 		}
 		return res;
 	}
@@ -21,11 +20,11 @@ public:
 int main()
 {
 	//int a = 'A' - 64;
-
+	 
 	//cout << a << endl;
 
 	Solution slu;
-	string console = "AA";
+	string console = "B";
 	cout << slu.titleToNumber(console) << endl;;
 
 	system("PAUSE");
